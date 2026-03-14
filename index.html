@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cody's Pool & Spa Co | In-Ground Gunite Specialists</title>
-
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +20,8 @@
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
                         accent: {
-                            primary: '#0088ff',
-                            secondary: '#00ffaa',
+                            primary: '#0088ff',   
+                            secondary: '#00ffaa', 
                         }
                     }
                 }
@@ -31,53 +30,19 @@
     </script>
 
     <style type="text/css">
-        body {
-            background-color: #050505;
-            color: #ffffff;
-        }
-
-        .skew-box {
-            transform: skewX(-12deg);
-        }
-
-        .unskew {
-            transform: skewX(12deg);
-        }
-
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-        }
-
-        .hero-mask {
-            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.3) 0%, rgba(5, 5, 5, 1) 100%);
-        }
-
-        .project-card {
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            border-color: var(--accent-primary);
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #050505;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #333;
-            border-radius: 10px;
-        }
+        body { background-color: #050505; color: #ffffff; }
+        .skew-box { transform: skewX(-12deg); }
+        .unskew { transform: skewX(12deg); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); }
+        .hero-mask { background: linear-gradient(to bottom, rgba(5,5,5,0.3) 0%, rgba(5,5,5,1) 100%); }
+        .project-card { border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .project-card:hover { border-color: var(--accent-primary); background: rgba(255,255,255,0.02); }
+        
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
     </style>
 </head>
-
 <body class="antialiased selection:bg-accent-primary selection:text-white">
 
     <!-- NAVIGATION -->
@@ -87,56 +52,50 @@
                 <span class="text-xl font-black uppercase tracking-tighter leading-none italic">Cody's</span>
                 <span class="text-[9px] font-black uppercase tracking-[0.3em] text-accent-primary">Pool & Spa Co</span>
             </div>
-
+            
             <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-white/50">
                 <a href="#services" class="hover:text-accent-primary transition-colors">Services</a>
                 <a href="#automation" class="hover:text-accent-primary transition-colors">Automation</a>
                 <a href="#gallery" class="hover:text-accent-primary transition-colors">Project Gallery</a>
-                <a href="#contact" class="hover:text-accent-primary transition-colors italic text-accent-secondary">Free
-                    Estimate</a>
+                <a href="#contact" class="hover:text-accent-primary transition-colors italic text-accent-secondary">Free Estimate</a>
             </div>
 
-            <a href="#contact"
-                class="bg-accent-primary text-white px-6 py-2 text-xs font-black uppercase italic skew-box hover:bg-white hover:text-black transition-all">
+            <a href="#contact" class="bg-accent-primary text-white px-6 py-2 text-xs font-black uppercase italic skew-box hover:bg-white hover:text-black transition-all">
                 <span class="unskew block">Get Estimate</span>
             </a>
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO (RESTORED TO ORIGINAL VERSION) -->
     <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 hero-mask z-10"></div>
-            <!-- Restored the professional aspiration background -->
-            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80"
-                alt="Elite Pool Substrate" class="w-full h-full object-cover opacity-60">
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80" 
+                 alt="Elite Pool Substrate" 
+                 class="w-full h-full object-cover opacity-60">
         </div>
 
         <div class="relative z-20 px-8 w-full max-w-7xl mx-auto">
             <div class="max-w-4xl space-y-8">
                 <div class="flex flex-wrap gap-3">
-                    <div
-                        class="bg-accent-secondary text-black text-[10px] font-black uppercase px-4 py-1.5 skew-box shadow-lg">
+                    <div class="bg-accent-secondary text-black text-[10px] font-black uppercase px-4 py-1.5 skew-box shadow-lg">
                         <span class="unskew block">Now Scheduling Pool Openings</span>
                     </div>
-                    <div
-                        class="bg-white/10 text-white text-[10px] font-black uppercase px-4 py-1.5 skew-box backdrop-blur">
+                    <div class="bg-white/10 text-white text-[10px] font-black uppercase px-4 py-1.5 skew-box backdrop-blur">
                         <span class="unskew block">Free Estimates</span>
                     </div>
                 </div>
-
+                
                 <h1 class="text-6xl md:text-[110px] font-black italic uppercase leading-[0.85] tracking-tighter">
                     Green <br> to <span class="text-accent-secondary">Clean.</span>
                 </h1>
-
+                
                 <p class="text-xl md:text-2xl text-white/90 max-w-2xl leading-tight font-medium">
-                    Specializing in in-ground gunite pools and spas. Technical precision for high-performance aquatic
-                    systems.
+                    Specializing in in-ground gunite pools and spas. Technical precision for high-performance aquatic systems.
                 </p>
 
                 <div class="flex flex-wrap gap-4 pt-6">
-                    <a href="#contact"
-                        class="bg-accent-primary text-white px-10 py-5 font-black uppercase text-sm skew-box hover:scale-105 transition-transform">
+                    <a href="#contact" class="bg-accent-primary text-white px-10 py-5 font-black uppercase text-sm skew-box hover:scale-105 transition-transform shadow-2xl">
                         <span class="unskew block">Message for Free Estimate</span>
                     </a>
                 </div>
@@ -144,35 +103,27 @@
         </div>
     </section>
 
-    <!-- PROOF / COMPARISON -->
+    <!-- PROOF / COMPARISON (FULL COLOR) -->
     <section id="proof" class="py-32 px-8 bg-[#050505] border-t border-white/5">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4">
-                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter leading-none">Chemical
-                    <span class="text-accent-primary">Recovery.</span></h2>
-                <p class="text-white/40 font-bold uppercase tracking-[0.4em] text-xs italic">Proven results for systems
-                    in critical state</p>
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter leading-none">Chemical <span class="text-accent-primary">Recovery.</span></h2>
+                <p class="text-white/40 font-bold uppercase tracking-[0.4em] text-xs italic">Proven results for systems in critical state</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="space-y-4">
                     <div class="aspect-[16/10] bg-zinc-900 border border-white/5 relative group overflow-hidden">
-                        <img src="651011834_10174381540990556_2745380762232645149_n.jpg"
-                            class="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-100 transition-opacity duration-500"
-                            alt="Cloudy Pool">
-                        <div
-                            class="absolute bottom-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box shadow-lg">
+                        <img src="651011834_10174381540990556_2745380762232645149_n.jpg" class="w-full h-full object-cover" alt="Before">
+                        <div class="absolute bottom-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box shadow-lg">
                             <span class="unskew block">Before - Homeowner unable to clear</span>
                         </div>
                     </div>
                 </div>
                 <div class="space-y-4">
-                    <div
-                        class="aspect-[16/10] bg-zinc-900 border border-accent-secondary/30 shadow-[0_0_30px_rgba(0,255,170,0.1)] relative group overflow-hidden">
-                        <img src="650904687_10174381543385556_8574594960345939678_n.jpg"
-                            class="w-full h-full object-cover" alt="Clear Pool">
-                        <div
-                            class="absolute bottom-4 left-4 bg-accent-secondary text-black px-3 py-1 text-[10px] font-black uppercase italic skew-box">
+                    <div class="aspect-[16/10] bg-zinc-900 border border-accent-secondary/30 shadow-[0_0_30px_rgba(0,255,170,0.1)] relative group overflow-hidden">
+                        <img src="650904687_10174381543385556_8574594960345939678_n.jpg" class="w-full h-full object-cover" alt="After">
+                        <div class="absolute bottom-4 left-4 bg-accent-secondary text-black px-3 py-1 text-[10px] font-black uppercase italic skew-box">
                             <span class="unskew block">After - Crystal Clean</span>
                         </div>
                     </div>
@@ -181,20 +132,17 @@
         </div>
     </section>
 
-    <!-- AUTOMATION FOCUS -->
+    <!-- AUTOMATION FOCUS (FULL COLOR) -->
     <section id="automation" class="py-32 px-8 bg-zinc-950 border-y border-white/5 relative overflow-hidden">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div class="space-y-8 relative z-10">
-                <h2 class="text-5xl font-black uppercase italic tracking-tighter leading-tight">Automation & <br> <span
-                        class="text-accent-primary">Troubleshooting.</span></h2>
+                <h2 class="text-5xl font-black uppercase italic tracking-tighter leading-tight">Automation & <br> <span class="text-accent-primary">Troubleshooting.</span></h2>
                 <p class="text-white/70 text-lg leading-relaxed font-medium italic">
-                    Certified programming and repair for industry-standard control systems. We specialize in making
-                    complex systems simple.
+                    Certified programming and repair for industry-standard control systems. We specialize in making complex systems simple.
                 </p>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="p-6 bg-white/5 border border-white/10">
-                        <h4 class="text-accent-secondary font-black text-[10px] uppercase mb-3 tracking-widest italic">
-                            Supported Units</h4>
+                        <h4 class="text-accent-secondary font-black text-[10px] uppercase mb-3 tracking-widest italic">Supported Units</h4>
                         <ul class="text-[11px] font-bold uppercase space-y-2 opacity-70">
                             <li>• Intellicenter</li>
                             <li>• Intellitouch</li>
@@ -203,8 +151,7 @@
                         </ul>
                     </div>
                     <div class="p-6 bg-white/5 border border-white/10">
-                        <h4 class="text-accent-primary font-black text-[10px] uppercase mb-3 tracking-widest italic">
-                            Programming</h4>
+                        <h4 class="text-accent-primary font-black text-[10px] uppercase mb-3 tracking-widest italic">Programming</h4>
                         <ul class="text-[11px] font-bold uppercase space-y-2 opacity-70">
                             <li>• Heat Mode Diagnostics</li>
                             <li>• Light Sync & Repair</li>
@@ -214,16 +161,11 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="relative group max-w-md mx-auto">
                 <div class="absolute inset-0 bg-accent-primary/20 blur-3xl opacity-20"></div>
                 <div class="relative rounded-xl border border-white/10 shadow-2xl overflow-hidden p-2 bg-[#0a0f14]">
-                    <img src="650529494_10174381719880556_5273871668526792544_n.jpg" alt="Automation Interface"
-                        class="w-full h-auto">
-                </div>
-                <div class="mt-4 text-center">
-                    <span class="text-[10px] font-black uppercase tracking-[0.3em] text-white/30 italic">Smart System
-                        Calibration</span>
+                     <img src="650529494_10174381719880556_5273871668526792544_n.jpg" alt="Automation Interface" class="w-full h-auto">
                 </div>
             </div>
         </div>
@@ -233,17 +175,13 @@
     <section id="services" class="py-32 px-8 bg-[#050505]">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20 space-y-4">
-                <h2 class="text-4xl md:text-5xl font-black italic uppercase tracking-tighter leading-none">Complete
-                    Service <span class="text-accent-primary">Substrate.</span></h2>
-                <p class="text-white/40 text-sm font-bold uppercase tracking-widest italic leading-none">Maintenance •
-                    Engineering • Restoration</p>
+                <h2 class="text-4xl md:text-5xl font-black italic uppercase tracking-tighter leading-none">Complete Service <span class="text-accent-primary">Substrate.</span></h2>
+                <p class="text-white/40 text-sm font-bold uppercase tracking-widest italic leading-none">Maintenance • Engineering • Restoration</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
-                <!-- Maintenance -->
                 <div class="p-10 bg-[#080808] space-y-6">
-                    <h3 class="text-accent-secondary text-xs font-black uppercase tracking-widest italic">Maintenance
-                    </h3>
+                    <h3 class="text-accent-secondary text-xs font-black uppercase tracking-widest italic">Maintenance</h3>
                     <ul class="space-y-3 text-[13px] font-semibold opacity-70 leading-snug">
                         <li>• Green to Clean Recovery</li>
                         <li>• Weekly Chemical Maintenance</li>
@@ -255,7 +193,6 @@
                         <li>• Calcium Scale Removal</li>
                     </ul>
                 </div>
-                <!-- Engineering -->
                 <div class="p-10 bg-[#080808] space-y-6 border-x border-white/5">
                     <h3 class="text-accent-primary text-xs font-black uppercase tracking-widest italic">Engineering</h3>
                     <ul class="space-y-3 text-[13px] font-semibold opacity-70 leading-snug">
@@ -269,129 +206,82 @@
                         <li>• Automation Troubleshooting</li>
                     </ul>
                 </div>
-                <!-- Structural -->
                 <div class="p-10 bg-[#080808] space-y-6">
-                    <h3 class="text-accent-secondary text-xs font-black uppercase tracking-widest italic">Structural
-                    </h3>
+                    <h3 class="text-accent-secondary text-xs font-black uppercase tracking-widest italic">Structural</h3>
                     <ul class="space-y-3 text-[13px] font-semibold opacity-70 leading-snug">
                         <li>• Acid Washing & Pressure Washing</li>
                         <li>• Iron & Heavy Metal Stain Removal</li>
                         <li>• Concrete Pads (Install/Demo)</li>
                         <li>• Concrete Extensions & Replacement</li>
                         <li>• Stone Deck Remediation</li>
-                        <li>• Demo & Demolition</li>
                         <li>• Above-Ground (Case-by-Case)</li>
+                        <li>• Demo & Demolition</li>
                     </ul>
                 </div>
             </div>
-
+            
             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="p-8 glass border-l-4 border-accent-secondary">
                     <p class="text-[11px] font-bold italic opacity-70 uppercase tracking-widest leading-relaxed">
-                        Note: We provide opening and service for above-ground pools depending on equipment configuration
-                        and site conditions. Message for a direct evaluation.
+                        Note: We provide opening and service for above-ground pools depending on equipment configuration and site conditions. Message for a direct evaluation.
                     </p>
                 </div>
-                <div class="p-8 glass border-l-4 border-accent-primary flex items-center">
-                    <p class="text-sm font-black uppercase tracking-widest italic text-accent-primary">Free Estimates
-                        Available for All In-Ground Systems</p>
+                <div class="p-8 glass border-l-4 border-accent-primary flex items-center text-accent-primary font-black uppercase tracking-widest italic text-sm">
+                    Free Estimates Available for All In-Ground Systems
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECT GALLERY -->
+    <!-- PROJECT GALLERY (FULL COLOR) -->
     <section id="gallery" class="py-32 px-8 bg-zinc-950 border-t border-white/5">
         <div class="max-w-7xl mx-auto space-y-20">
             <div class="text-center">
-                <h2 class="text-4xl font-black italic uppercase leading-none">Project <span
-                        class="text-accent-secondary">Log.</span></h2>
-                <p class="text-white/30 text-[10px] font-black uppercase tracking-[0.4em] mt-2">Historical Field Service
-                    Data</p>
+                <h2 class="text-4xl font-black italic uppercase leading-none">Project <span class="text-accent-secondary">Log.</span></h2>
+                <p class="text-white/30 text-[10px] font-black uppercase tracking-[0.4em] mt-2">Historical Field Service Data</p>
             </div>
-
+            
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Large After (Local Photo 1) -->
                 <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
-                    <img src="650736429_10174381567535556_6201368595169186614_n.jpg"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        alt="Full Clean">
-                    <div
-                        class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">After: Green to
-                            Clean</span>
+                    <img src="650736429_10174381567535556_6201368595169186614_n.jpg" class="w-full h-full object-cover" alt="Full Clean">
+                    <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">After: Green to Clean</span>
                     </div>
                 </div>
-
-                <!-- Spa Detail (Local Photo 2) -->
                 <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
-                    <img src="650389070_10174381447400556_8058776580205178084_n.jpg"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        alt="Spa Jet Cleaning">
-                    <div
-                        class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-[10px] font-black uppercase text-accent-primary italic">Hot Tub Jet Line
-                            Restoration</span>
+                    <img src="650389070_10174381447400556_8058776580205178084_n.jpg" class="w-full h-full object-cover" alt="Spa Jet Cleaning">
+                    <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-accent-primary italic">Hot Tub Jet Line Restoration</span>
                     </div>
                 </div>
-
-                <!-- Trenching/Plumbing (Local Photo 3) -->
                 <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
-                    <img src="650995348_10174381845320556_1693477011558182405_n.jpg"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        alt="Sub-Surface Engineering">
-                    <div
-                        class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-center p-4">
-                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">Complex Site
-                            Plumbing & Leak Detection</span>
+                    <img src="650995348_10174381845320556_1693477011558182405_n.jpg" class="w-full h-full object-cover" alt="Sub-Surface Engineering">
+                    <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity text-center p-4">
+                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">Complex Site Plumbing & Leak Detection</span>
                     </div>
                 </div>
-
-                <!-- Above Ground Example (Local Photo 4) -->
                 <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
-                    <img src="651713159_10174381447050556_8247961991041372572_n.jpg"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        alt="Above Ground Setup">
-                    <div
-                        class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-[10px] font-black uppercase text-accent-primary italic">Above-Ground System
-                            Optimization</span>
+                    <img src="651713159_10174381447050556_8247961991041372572_n.jpg" class="w-full h-full object-cover" alt="Above Ground Setup">
+                    <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-accent-primary italic">Above-Ground System Optimization</span>
                     </div>
                 </div>
-
-                <!-- Modern Gunite (Local Photo 5) -->
                 <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
-                    <img src="650599628_10174381447525556_6041631577626497080_n.jpg"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        alt="In-Ground Gunite">
-                    <div
-                        class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">Modern Gunite
-                            Substrate</span>
+                    <img src="650599628_10174381447525556_6041631577626497080_n.jpg" class="w-full h-full object-cover" alt="In-Ground Gunite">
+                    <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">Modern Gunite Substrate</span>
                     </div>
                 </div>
-
-                <!-- Clean Pool Finish (Local Photo 6) -->
                 <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
-                    <img src="650429889_10174381447200556_1094361134262483848_n.jpg"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        alt="Weekly Maintenance">
-                    <div
-                        class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-[10px] font-black uppercase text-accent-primary italic">Precision Maintenance
-                            Data</span>
+                    <img src="650429889_10174381447200556_1094361134262483848_n.jpg" class="w-full h-full object-cover" alt="Weekly Maintenance">
+                    <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-accent-primary italic">Precision Maintenance Data</span>
                     </div>
                 </div>
-
-                <!-- Extra Finish (Local Photo 7) -->
                 <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
-                    <img src="651661731_10174381595015556_4053891515271567760_n.jpg"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        alt="Surface Clarity">
-                    <div
-                        class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">Engineered Surface
-                            Clarity</span>
+                    <img src="651661731_10174381595015556_4053891515271567760_n.jpg" class="w-full h-full object-cover" alt="Surface Clarity">
+                    <div class="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-accent-secondary italic">Engineered Surface Clarity</span>
                     </div>
                 </div>
             </div>
@@ -399,40 +289,23 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="py-40 px-8 bg-accent-primary text-white relative overflow-hidden">
-        <!-- Decorative Icon -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
-            <svg width="600" height="600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 2v20M2 12h20" />
-            </svg>
-        </div>
-
+    <section id="contact" class="py-40 px-8 bg-accent-primary text-white relative">
         <div class="max-w-xl mx-auto text-center space-y-12 relative z-10">
-            <h2 class="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-none">FREE <br>
-                ESTIMATE.</h2>
-            <p
-                class="font-black uppercase tracking-[0.4em] text-[10px] italic opacity-80 underline underline-offset-8 decoration-2">
-                Message for Technical Site Evaluation</p>
-
-            <form class="space-y-4"
-                onsubmit="event.preventDefault(); document.getElementById('success').classList.remove('hidden'); this.classList.add('hidden');">
-                <input type="text" required placeholder="PROPERTY NAME / OWNER"
-                    class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none shadow-xl">
-                <input type="text" required placeholder="CONTACT INFO (EMAIL/PHONE)"
-                    class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none shadow-xl">
-                <textarea placeholder="DESCRIBE THE SERVICE NEEDED (AUTOMATION, REPAIR, RESTORATION...)"
-                    class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none min-h-[140px] shadow-xl"></textarea>
-                <button type="submit"
-                    class="w-full bg-black text-white p-6 font-black uppercase italic text-sm hover:bg-zinc-900 transition-all hover:scale-[1.02] shadow-2xl">
-                    Request Evaluation
+            <h2 class="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-none">FREE <br> ESTIMATE.</h2>
+            <p class="font-black uppercase tracking-[0.4em] text-[10px] italic opacity-80 underline underline-offset-8">Message for Site Analysis</p>
+            
+            <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('success').classList.remove('hidden'); this.classList.add('hidden');">
+                <input type="text" required placeholder="PROPERTY NAME / OWNER" class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none">
+                <input type="text" required placeholder="CONTACT INFO (EMAIL/PHONE)" class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none">
+                <textarea placeholder="DESCRIBE THE SERVICE NEEDED..." class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none min-h-[140px]"></textarea>
+                <button type="submit" class="w-full bg-black text-white p-6 font-black uppercase italic text-sm hover:scale-[1.02] transition-all shadow-2xl">
+                    Request Free Estimate
                 </button>
             </form>
 
             <div id="success" class="hidden p-12 border-4 border-white glass animate-pulse">
                 <span class="text-3xl font-black italic uppercase">Signal Received.</span>
-                <p class="mt-4 font-bold opacity-80 uppercase tracking-widest text-xs italic">Cody will contact you for
-                    a site analysis shortly.</p>
+                <p class="mt-4 font-bold opacity-80 uppercase tracking-widest text-xs italic">Cody will contact you for a site analysis shortly.</p>
             </div>
         </div>
     </section>
@@ -446,11 +319,10 @@
             </div>
             <div class="text-[10px] font-black uppercase tracking-[0.5em] md:text-right">
                 © 2026 // TYCORP SYSTEMS ASSET <br>
-                <span class="text-[8px] opacity-50 italic">Gunite Specialization • Maintenance • Engineering</span>
+                <span class="text-[8px] opacity-50 italic">Connecticut • Specialized Gunite Maintenance</span>
             </div>
         </div>
     </footer>
 
 </body>
-
 </html>
