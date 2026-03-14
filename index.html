@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cody's Pool & Spa Co | In-Ground Gunite Specialists</title>
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +21,8 @@
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
                         accent: {
-                            primary: '#0088ff',   
-                            secondary: '#00ffaa', 
+                            primary: '#0088ff',
+                            secondary: '#00ffaa',
                         }
                     }
                 }
@@ -30,73 +31,109 @@
     </script>
 
     <style type="text/css">
-        body { background-color: #050505; color: #ffffff; }
-        .skew-box { transform: skewX(-12deg); }
-        .unskew { transform: skewX(12deg); }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); }
-        .hero-mask { background: linear-gradient(to bottom, rgba(5,5,5,0.3) 0%, rgba(5,5,5,1) 100%); }
-        .project-card { border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; overflow: hidden; }
-        .project-card:hover { border-color: var(--accent-primary); background: rgba(255,255,255,0.02); }
-        .img-label { background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); }
-        
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #050505; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        body {
+            background-color: #050505;
+            color: #ffffff;
+        }
+
+        .skew-box {
+            transform: skewX(-12deg);
+        }
+
+        .unskew {
+            transform: skewX(12deg);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+        }
+
+        .hero-mask {
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.3) 0%, rgba(5, 5, 5, 1) 100%);
+        }
+
+        .project-card {
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: #0088ff;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
     </style>
 </head>
-<body class="antialiased selection:bg-accent-primary selection:text-white">
+
+<body class="antialiased selection:bg-blue-500 selection:text-white">
 
     <!-- NAVIGATION -->
     <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex flex-col border-l-4 border-accent-primary pl-3">
+            <div class="flex flex-col border-l-4 border-blue-500 pl-3">
                 <span class="text-xl font-black uppercase tracking-tighter leading-none italic">Cody's</span>
-                <span class="text-[9px] font-black uppercase tracking-[0.3em] text-accent-primary">Pool & Spa Co</span>
-            </div>
-            
-            <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-white/50">
-                <a href="#services" class="hover:text-accent-primary transition-colors">Services</a>
-                <a href="#proof" class="hover:text-accent-primary transition-colors">Transformations</a>
-                <a href="#engineering" class="hover:text-accent-primary transition-colors">Engineering</a>
-                <a href="#gallery" class="hover:text-accent-primary transition-colors text-accent-secondary">Log</a>
+                <span class="text-[9px] font-black uppercase tracking-[0.3em] text-blue-400">Pool & Spa Co</span>
             </div>
 
-            <a href="#contact" class="bg-accent-primary text-white px-6 py-2 text-xs font-black uppercase italic skew-box hover:bg-white hover:text-black transition-all">
-                <span class="unskew block">Free Estimate</span>
+            <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-white/50">
+                <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>
+                <a href="#automation" class="hover:text-blue-400 transition-colors">Automation</a>
+                <a href="#gallery" class="hover:text-blue-400 transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors text-green-400">Free Estimate</a>
+            </div>
+
+            <a href="#contact"
+                class="bg-blue-500 text-white px-6 py-2 text-xs font-black uppercase italic skew-box hover:bg-white hover:text-black transition-all">
+                <span class="unskew block">Get Estimate</span>
             </a>
         </div>
     </nav>
 
-    <!-- HERO (RESTORED TO ORIGINAL UNMODIFIED VERSION) -->
+    <!-- HERO -->
     <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 hero-mask z-10"></div>
-            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80" 
-                 alt="Elite Pool Substrate" 
-                 class="w-full h-full object-cover opacity-60">
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80"
+                alt="Pool" class="w-full h-full object-cover opacity-60">
         </div>
 
         <div class="relative z-20 px-8 w-full max-w-7xl mx-auto">
             <div class="max-w-4xl space-y-8">
                 <div class="flex flex-wrap gap-3">
-                    <div class="bg-accent-secondary text-black text-[10px] font-black uppercase px-4 py-1.5 skew-box shadow-lg">
+                    <div
+                        class="bg-green-400 text-black text-[10px] font-black uppercase px-4 py-1.5 skew-box shadow-lg">
                         <span class="unskew block">Now Scheduling Pool Openings</span>
                     </div>
-                    <div class="bg-white/10 text-white text-[10px] font-black uppercase px-4 py-1.5 skew-box backdrop-blur">
+                    <div
+                        class="bg-white/10 text-white text-[10px] font-black uppercase px-4 py-1.5 skew-box backdrop-blur">
                         <span class="unskew block">Free Estimates</span>
                     </div>
                 </div>
-                
+
                 <h1 class="text-6xl md:text-[110px] font-black italic uppercase leading-[0.85] tracking-tighter">
-                    Green <br> to <span class="text-accent-secondary">Clean.</span>
+                    Green <br> to <span class="text-green-400">Clean.</span>
                 </h1>
-                
+
                 <p class="text-xl md:text-2xl text-white/90 max-w-2xl leading-tight font-medium">
-                    Specializing in in-ground gunite pools and spas. Technical precision for high-performance aquatic systems.
+                    Specializing in in-ground gunite pools and spas. Above-ground pools serviced depending on equipment.
                 </p>
 
                 <div class="flex flex-wrap gap-4 pt-6">
-                    <a href="#contact" class="bg-accent-primary text-white px-10 py-5 font-black uppercase text-sm skew-box hover:scale-105 transition-transform shadow-2xl">
+                    <a href="#contact"
+                        class="bg-blue-500 text-white px-10 py-5 font-black uppercase text-sm skew-box hover:scale-105 transition-transform">
                         <span class="unskew block">Message for Free Estimate</span>
                     </a>
                 </div>
@@ -104,236 +141,338 @@
         </div>
     </section>
 
-    <!-- PROOF / COMPARISON (6 IMAGES TOTAL) -->
+    <!-- BEFORE & AFTER -->
     <section id="proof" class="py-32 px-8 bg-[#050505] border-t border-white/5">
-        <div class="max-w-7xl mx-auto space-y-16">
+        <div class="max-w-7xl mx-auto space-y-20">
             <div class="text-center space-y-4">
-                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter leading-none text-accent-primary">TRANSFORMATION PROOF.</h2>
-                <p class="text-white/40 font-bold uppercase tracking-[0.4em] text-xs italic">Historical Recovery Data</p>
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter leading-none">Before
+                    <span class="text-blue-400">&</span> After.</h2>
+                <p class="text-white/40 font-bold uppercase tracking-[0.4em] text-xs italic">Real results, real pools</p>
             </div>
 
-            <!-- Set 1: Green to Clean -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="project-card relative aspect-video bg-zinc-900 border border-white/5">
-                    <img src="651190810_10174381533255556_42493019623011829_n.jpg" class="w-full h-full object-cover" alt="Green Before">
-                    <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box">
-                        <span class="unskew block">Baseline: Neglected State</span>
+            <!-- Pair 1: Cloudy to Crystal Clear -->
+            <div>
+                <p class="text-[10px] font-black uppercase tracking-[0.4em] text-white/30 mb-4">Cloudy Water Recovery</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <div class="aspect-[16/10] bg-zinc-900 border border-white/5 relative overflow-hidden">
+                            <img src="651011834_10174381540990556_2745380762232645149_n.jpg"
+                                class="w-full h-full object-cover" alt="Before - Cloudy Pool">
+                            <div class="absolute bottom-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box shadow-lg">
+                                <span class="unskew block">Before</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card relative aspect-video bg-zinc-900 border border-accent-secondary/30 shadow-[0_0_30px_rgba(0,255,170,0.1)]">
-                    <img src="650736429_10174381567535556_6201368595169186614_n.jpg" class="w-full h-full object-cover" alt="Clean After">
-                    <div class="absolute top-4 left-4 bg-accent-secondary text-black px-3 py-1 text-[10px] font-black uppercase italic skew-box">
-                        <span class="unskew block">Result: Green to Clean</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Set 2: Cloudy Recovery -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="project-card relative aspect-video bg-zinc-900 border border-white/5">
-                    <img src="651011834_10174381540990556_2745380762232645149_n.jpg" class="w-full h-full object-cover" alt="Cloudy Before">
-                    <div class="absolute top-4 left-4 bg-white/20 backdrop-blur text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box">
-                        <span class="unskew block">Before: System Imbalance</span>
-                    </div>
-                </div>
-                <div class="project-card relative aspect-video bg-zinc-900 border border-accent-primary/30">
-                    <img src="650904687_10174381543385556_8574594960345939678_n.jpg" class="w-full h-full object-cover" alt="Clear After">
-                    <div class="absolute top-4 left-4 bg-accent-primary text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box">
-                        <span class="unskew block">After: Crystal Precision</span>
+                    <div class="space-y-2">
+                        <div class="aspect-[16/10] bg-zinc-900 border border-green-400/30 shadow-[0_0_30px_rgba(0,255,170,0.1)] relative overflow-hidden">
+                            <img src="650904687_10174381543385556_8574594960345939678_n.jpg"
+                                class="w-full h-full object-cover" alt="After - Crystal Clear">
+                            <div class="absolute bottom-4 left-4 bg-green-400 text-black px-3 py-1 text-[10px] font-black uppercase italic skew-box">
+                                <span class="unskew block">After — Crystal Clear</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Set 3: Stone Deck Remediation -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="project-card relative aspect-video bg-zinc-900 border border-white/5">
-                    <img src="651278683_10174381460705556_4966367746380877149_n.jpg" class="w-full h-full object-cover" alt="Stone Before">
-                    <div class="absolute top-4 left-4 bg-red-600/40 backdrop-blur text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box">
-                        <span class="unskew block">Stone Deck: Baseline</span>
+            <!-- Pair 2: Green to Clean -->
+            <div>
+                <p class="text-[10px] font-black uppercase tracking-[0.4em] text-white/30 mb-4">Green to Clean</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <div class="aspect-[16/10] bg-zinc-900 border border-white/5 relative overflow-hidden">
+                            <img src="650912333_10174381626790556_1950226693330531328_n.jpg"
+                                class="w-full h-full object-cover" alt="Before - Green Pool">
+                            <div class="absolute bottom-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box shadow-lg">
+                                <span class="unskew block">Before</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="aspect-[16/10] bg-zinc-900 border border-green-400/30 shadow-[0_0_30px_rgba(0,255,170,0.1)] relative overflow-hidden">
+                            <img src="650736429_10174381567535556_6201368595169186614_n.jpg"
+                                class="w-full h-full object-cover" alt="After - Green to Clean">
+                            <div class="absolute bottom-4 left-4 bg-green-400 text-black px-3 py-1 text-[10px] font-black uppercase italic skew-box">
+                                <span class="unskew block">After — Green to Clean</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card relative aspect-video bg-zinc-900 border border-accent-secondary/30">
-                    <img src="650514135_10174381666175556_8790726833048210171_n.jpg" class="w-full h-full object-cover" alt="Stone After">
-                    <div class="absolute top-4 left-4 bg-accent-secondary text-black px-3 py-1 text-[10px] font-black uppercase italic skew-box">
-                        <span class="unskew block">Stone Deck: Pressure Washed</span>
+            </div>
+
+            <!-- Pair 3: Stone Deck -->
+            <div>
+                <p class="text-[10px] font-black uppercase tracking-[0.4em] text-white/30 mb-4">Stone Deck Remediation</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <div class="aspect-[16/10] bg-zinc-900 border border-white/5 relative overflow-hidden">
+                            <img src="650678804_10174381465365556_8583933445757941753_n.jpg"
+                                class="w-full h-full object-cover" alt="Before - Stone Deck">
+                            <div class="absolute bottom-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase italic skew-box shadow-lg">
+                                <span class="unskew block">Before</span>
+                            </div>
+                        </div>
                     </div>
+                    <div class="space-y-2">
+                        <div class="aspect-[16/10] bg-zinc-900 border border-green-400/30 shadow-[0_0_30px_rgba(0,255,170,0.1)] relative overflow-hidden">
+                            <img src="651135339_10174381505930556_7431998682079285256_n.jpg"
+                                class="w-full h-full object-cover" alt="After - Stone Deck">
+                            <div class="absolute bottom-4 left-4 bg-green-400 text-black px-3 py-1 text-[10px] font-black uppercase italic skew-box">
+                                <span class="unskew block">After</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AUTOMATION FOCUS -->
+    <section id="automation" class="py-32 px-8 bg-zinc-950 border-y border-white/5 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8 relative z-10">
+                <h2 class="text-5xl font-black uppercase italic tracking-tighter leading-tight">Automation & <br> <span
+                        class="text-blue-400">Troubleshooting.</span></h2>
+                <p class="text-white/70 text-lg leading-relaxed font-medium italic">
+                    Programming and repair for all major control systems. We make complex systems simple.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-white/5 border border-white/10">
+                        <h4 class="text-green-400 font-black text-[10px] uppercase mb-3 tracking-widest italic">
+                            Supported Systems</h4>
+                        <ul class="text-[11px] font-bold uppercase space-y-2 opacity-70">
+                            <li>• Intellicenter</li>
+                            <li>• Intellitouch</li>
+                            <li>• Attendant</li>
+                            <li>• Omnilogic</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-white/5 border border-white/10">
+                        <h4 class="text-blue-400 font-black text-[10px] uppercase mb-3 tracking-widest italic">
+                            What We Do</h4>
+                        <ul class="text-[11px] font-bold uppercase space-y-2 opacity-70">
+                            <li>• Heat Mode Diagnostics</li>
+                            <li>• Light Sync & Repair</li>
+                            <li>• Salt Cell Troubleshooting</li>
+                            <li>• Schedule Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group max-w-md mx-auto">
+                <div class="absolute inset-0 bg-blue-500/20 blur-3xl opacity-20"></div>
+                <div class="relative rounded-xl border border-white/10 shadow-2xl overflow-hidden p-2 bg-[#0a0f14]">
+                    <img src="650529494_10174381719880556_5273871668526792544_n.jpg" alt="Pool Automation App"
+                        class="w-full h-auto">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- AUTOMATION & INFRASTRUCTURE (4 IMAGES TOTAL) -->
-    <section id="engineering" class="py-32 px-8 bg-zinc-950 border-y border-white/5 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto space-y-16">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                <div class="space-y-8 sticky top-32">
-                    <h2 class="text-5xl font-black uppercase italic tracking-tighter leading-tight">Engineering & <br> <span class="text-accent-primary">Sub-Surface.</span></h2>
-                    <p class="text-white/70 text-lg leading-relaxed font-medium">
-                        Industrial grade installations, automation programming, and sub-surface plumbing repairs. 
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="p-6 bg-white/5 border border-white/10 rounded-sm">
-                            <h4 class="text-accent-secondary font-black text-[10px] uppercase mb-3 tracking-widest italic text-center">Smart Control</h4>
-                            <img src="650529494_10174381719880556_5273871668526792544_n.jpg" class="w-full h-auto border border-white/10" alt="Automation Screen">
-                        </div>
-                        <div class="p-6 bg-white/5 border border-white/10 rounded-sm">
-                            <h4 class="text-accent-primary font-black text-[10px] uppercase mb-3 tracking-widest italic text-center">Equipment Setup</h4>
-                            <img src="651213401_10174381528235556_4711256918239889789_n.jpg" class="w-full h-auto border border-white/10" alt="Equipment Pads">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="project-card group">
-                        <img src="650995348_10174381845320556_1693477011558182405_n.jpg" class="w-full h-auto" alt="Trenching Plumbing">
-                        <div class="p-4 bg-[#080808]">
-                            <span class="text-[10px] font-black uppercase text-accent-secondary italic">Complex Site Plumbing & Trenching</span>
-                        </div>
-                    </div>
-                    <div class="project-card group">
-                        <img src="650912333_10174381626790556_1950226693330531328_n.jpg" class="w-full h-auto" alt="Close-up Wiring">
-                        <div class="p-4 bg-[#080808]">
-                            <span class="text-[10px] font-black uppercase text-accent-primary italic">Precision Component Wiring & Testing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECT GALLERY (7 IMAGES TOTAL) -->
-    <section id="gallery" class="py-32 px-8 bg-[#050505] border-t border-white/5">
-        <div class="max-w-7xl mx-auto space-y-20">
-            <div class="text-center">
-                <h2 class="text-4xl font-black italic uppercase leading-none">Project <span class="text-accent-secondary">Logs.</span></h2>
-                <p class="text-white/30 text-[10px] font-black uppercase tracking-[0.4em] mt-2 italic">Comprehensive Project Record</p>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Spa/Hot Tub 1 -->
-                <div class="project-card relative h-72">
-                    <img src="650389070_10174381447400556_8058776580205178084_n.jpg" class="w-full h-full object-cover" alt="Spa 1">
-                    <div class="absolute bottom-0 w-full p-4 img-label text-[9px] font-black uppercase text-accent-primary">Hot Tub Jet Line Restoration</div>
-                </div>
-                <!-- Spa/Hot Tub 2 -->
-                <div class="project-card relative h-72">
-                    <img src="651135339_10174381505930556_7431998682079285256_n.jpg" class="w-full h-full object-cover" alt="Spa 2">
-                    <div class="absolute bottom-0 w-full p-4 img-label text-[9px] font-black uppercase text-accent-secondary">Drain, Clean, and Refill Data</div>
-                </div>
-                <!-- Gunite Pool -->
-                <div class="project-card relative h-72">
-                    <img src="650599628_10174381447525556_6041631577626497080_n.jpg" class="w-full h-full object-cover" alt="Modern Gunite">
-                    <div class="absolute bottom-0 w-full p-4 img-label text-[9px] font-black uppercase text-accent-primary">Modern Gunite Substrate Optimization</div>
-                </div>
-                <!-- Above Ground -->
-                <div class="project-card relative h-72">
-                    <img src="651713159_10174381447050556_8247961991041372572_n.jpg" class="w-full h-full object-cover" alt="Above Ground">
-                    <div class="absolute bottom-0 w-full p-4 img-label text-[9px] font-black uppercase text-accent-secondary">Specialized Above-Ground Service</div>
-                </div>
-                <!-- Long Pool View -->
-                <div class="project-card relative h-72">
-                    <img src="650429889_10174381447200556_1094361134262483848_n.jpg" class="w-full h-full object-cover" alt="Large Pool 1">
-                    <div class="absolute bottom-0 w-full p-4 img-label text-[9px] font-black uppercase text-accent-primary">Elite Maintenance Log #014</div>
-                </div>
-                <!-- Basketball Pool View -->
-                <div class="project-card relative h-72">
-                    <img src="651661731_10174381595015556_4053891515271567760_n.jpg" class="w-full h-full object-cover" alt="Large Pool 2">
-                    <div class="absolute bottom-0 w-full p-4 img-label text-[9px] font-black uppercase text-accent-secondary">Weekly Chemical Balance Analysis</div>
-                </div>
-                <!-- Stone Detail -->
-                <div class="project-card relative h-72">
-                    <img src="650678804_10174381465365556_8583933445757941753_n.jpg" class="w-full h-full object-cover" alt="Stone Detail">
-                    <div class="absolute bottom-0 w-full p-4 img-label text-[9px] font-black uppercase text-accent-primary">Detailed Stone Deck Remediation</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FULL SERVICE SUBSTRATE -->
-    <section id="services" class="py-32 px-8 bg-zinc-950 border-t border-white/5">
-        <div class="max-w-7xl mx-auto space-y-20">
-            <div class="space-y-4">
-                <h2 class="text-4xl md:text-5xl font-black italic uppercase tracking-tighter leading-none">Full Range <span class="text-accent-primary">Substrate.</span></h2>
-                <p class="text-white/40 text-sm font-bold uppercase tracking-widest italic leading-none">Maintenance • Engineering • Remediation</p>
+    <!-- FULL SERVICE LIST -->
+    <section id="services" class="py-32 px-8 bg-[#050505]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-black italic uppercase tracking-tighter leading-none">What We
+                    <span class="text-blue-400">Do.</span></h2>
+                <p class="text-white/40 text-sm font-bold uppercase tracking-widest italic leading-none">Maintenance •
+                    Repairs • Restoration</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
+                <!-- Maintenance -->
                 <div class="p-10 bg-[#080808] space-y-6">
-                    <h3 class="text-accent-secondary text-xs font-black uppercase tracking-widest italic">Core Care</h3>
-                    <ul class="space-y-3 text-[12px] font-bold uppercase opacity-70 leading-snug">
+                    <h3 class="text-green-400 text-xs font-black uppercase tracking-widest italic">Maintenance</h3>
+                    <ul class="space-y-3 text-[13px] font-semibold opacity-70 leading-snug">
                         <li>• Green to Clean Recovery</li>
                         <li>• Weekly Chemical Maintenance</li>
-                        <li>• Filter Cleaning & Service</li>
-                        <li>• Cartridge Replacement</li>
-                        <li>• Hot Tub Chemistry Care</li>
-                        <li>• Drain and Fills</li>
+                        <li>• Filter Cleaning & Cartridge Replacement</li>
+                        <li>• Salt Cell Cleaning & Replacement</li>
+                        <li>• Hot Tub Chemistry Maintenance</li>
                         <li>• Jet Line Cleaning</li>
-                        <li>• Calcium Scale Removal</li>
-                        <li>• Metal Stain Removal</li>
+                        <li>• Drain and Fills</li>
+                        <li>• Calcium & Iron/Heavy Metal Stain Removal</li>
                     </ul>
                 </div>
-                <div class="p-10 bg-[#080808] space-y-6">
-                    <h3 class="text-accent-primary text-xs font-black uppercase tracking-widest italic">Engineering</h3>
-                    <ul class="space-y-3 text-[12px] font-bold uppercase opacity-70 leading-snug">
-                        <li>• New Equipment Installs</li>
+                <!-- Repairs & Installs -->
+                <div class="p-10 bg-[#080808] space-y-6 border-x border-white/5">
+                    <h3 class="text-blue-400 text-xs font-black uppercase tracking-widest italic">Repairs & Installs</h3>
+                    <ul class="space-y-3 text-[13px] font-semibold opacity-70 leading-snug">
+                        <li>• New Equipment Installations</li>
                         <li>• Plumbing & Filter Repairs</li>
-                        <li>• Heater Repairs & Diagnostics</li>
-                        <li>• Automation Programming</li>
-                        <li>• Automation Troubleshooting</li>
+                        <li>• Heater Repairs (Pentair, Hayward, Jandy etc)</li>
+                        <li>• Pressure Testing & Leak Detection</li>
                         <li>• Salt Conversion Systems</li>
                         <li>• Pool Light Replacement</li>
-                        <li>• Leak Detection</li>
-                        <li>• Pressure Testing</li>
+                        <li>• Ozone Install, Maintenance & Troubleshooting</li>
+                        <li>• Automation Programming & Troubleshooting</li>
                     </ul>
                 </div>
+                <!-- Surface & Structural -->
                 <div class="p-10 bg-[#080808] space-y-6">
-                    <h3 class="text-accent-secondary text-xs font-black uppercase tracking-widest italic">Structural</h3>
-                    <ul class="space-y-3 text-[12px] font-bold uppercase opacity-70 leading-snug">
-                        <li>• Acid & Pressure Washing</li>
+                    <h3 class="text-green-400 text-xs font-black uppercase tracking-widest italic">Surface & Structural</h3>
+                    <ul class="space-y-3 text-[13px] font-semibold opacity-70 leading-snug">
+                        <li>• Acid Washing & Pressure Washing</li>
                         <li>• Stone Deck Remediation</li>
-                        <li>• Concrete Pads (Install/Demo)</li>
-                        <li>• Concrete Extensions</li>
-                        <li>• Concrete Demolition</li>
-                        <li>• Concrete Replacement</li>
-                        <li>• Ozone Maintenance & Troubleshooting</li>
-                        <li>• Ozone Installation</li>
+                        <li>• Concrete Pads — Install, Extension, Demolition, Replacement</li>
+                        <li>• Pool Opening & Closing</li>
+                        <li>• Above-Ground Pools (depending on equipment)</li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="p-8 glass border-l-4 border-accent-secondary">
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-8 glass border-l-4 border-green-400">
                     <p class="text-[11px] font-bold italic opacity-70 uppercase tracking-widest leading-relaxed">
-                        Note: We specialize in in-ground gunite pools and spas. Service for above-ground pools is provided on a case-by-case basis depending on equipment configuration.
+                        Specializing in in-ground gunite pools and spas. Above-ground pools opened and serviced depending on equipment. Message for a free estimate.
                     </p>
                 </div>
-                <div class="p-8 glass border-l-4 border-accent-primary flex items-center text-accent-primary font-black uppercase tracking-widest italic text-sm">
-                    Message for Free Evaluation & Estimates
+                <div class="p-8 glass border-l-4 border-blue-500 flex items-center">
+                    <p class="text-sm font-black uppercase tracking-widest italic text-blue-400">Free Estimates Available — Message Us Anytime</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT GALLERY -->
+    <section id="gallery" class="py-32 px-8 bg-zinc-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto space-y-20">
+            <div class="text-center">
+                <h2 class="text-4xl font-black italic uppercase leading-none">Project <span
+                        class="text-green-400">Gallery.</span></h2>
+                <p class="text-white/30 text-[10px] font-black uppercase tracking-[0.4em] mt-2">Work From The Field</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="650429889_10174381447200556_1094361134262483848_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Clean Pool">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-green-400 italic">Clean Pool</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="651661731_10174381595015556_4053891515271567760_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Clean Pool">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-green-400 italic">Clean Pool</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="651190810_10174381533255556_424930196230118329_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Hot Tub Service">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-blue-400 italic">Hot Tub Service</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="651713159_10174381447050556_8247961991041372572_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Above Ground Pool">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-blue-400 italic">Above-Ground Pool Service</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="650599628_10174381447525556_6041631577626497080_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="In-Ground Gunite Pool">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-green-400 italic">In-Ground Gunite Pool</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="650995348_10174381845320556_1693477011558182405_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Filter Equipment Install">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-blue-400 italic">Filter Equipment Install</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="650389070_10174381447400556_8058776580205178084_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Plumbing & Pipe Work">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-blue-400 italic">Plumbing & Pipe Work</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="651213401_10174381528235556_4711256918239889789_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Hot Tub Drain & Clean">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-green-400 italic">Hot Tub Drain & Clean</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="651278683_10174381460705556_4966367746380877149_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Heater Repair">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-blue-400 italic">Heater Repair — Pentair, Hayward, Jandy</span>
+                    </div>
+                </div>
+
+                <div class="project-card relative h-72 overflow-hidden bg-zinc-900 group">
+                    <img src="650514135_10174381666175556_8790726833048210171_n.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        alt="Stone Deck After">
+                    <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-[10px] font-black uppercase text-green-400 italic">Stone Deck — After</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="py-40 px-8 bg-accent-primary text-white relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none text-[30vw] font-black italic uppercase tracking-tighter">ESTIMATE</div>
+    <section id="contact" class="py-40 px-8 bg-blue-600 text-white relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
+            <svg width="600" height="600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2v20M2 12h20" />
+            </svg>
+        </div>
 
         <div class="max-w-xl mx-auto text-center space-y-12 relative z-10">
-            <h2 class="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-none">FREE <br> ESTIMATE.</h2>
-            <p class="font-black uppercase tracking-[0.4em] text-[10px] italic opacity-80 underline underline-offset-8 decoration-2 text-center">In-Ground Gunite Specialization</p>
-            
-            <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('success').classList.remove('hidden'); this.classList.add('hidden');">
-                <input type="text" required placeholder="PROPERTY NAME / OWNER" class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none shadow-xl">
-                <input type="text" required placeholder="CONTACT INFO (EMAIL/PHONE)" class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none shadow-xl">
-                <textarea placeholder="DESCRIBE THE SERVICE NEEDED..." class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none min-h-[140px] shadow-xl"></textarea>
-                <button type="submit" class="w-full bg-black text-white p-6 font-black uppercase italic text-sm hover:bg-zinc-900 transition-all hover:scale-[1.02] shadow-2xl">
-                    Request Analysis
+            <h2 class="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-none">FREE <br>
+                ESTIMATE.</h2>
+            <p class="font-black uppercase tracking-[0.4em] text-[10px] italic opacity-80">
+                Message us and Cody will get back to you</p>
+
+            <form class="space-y-4"
+                onsubmit="event.preventDefault(); document.getElementById('success').classList.remove('hidden'); this.classList.add('hidden');">
+                <input type="text" required placeholder="YOUR NAME"
+                    class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none shadow-xl">
+                <input type="text" required placeholder="EMAIL OR PHONE"
+                    class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none shadow-xl">
+                <textarea placeholder="WHAT DO YOU NEED? (OPENING, REPAIR, GREEN POOL, ETC.)"
+                    class="w-full bg-white text-black p-5 font-black uppercase italic text-sm outline-none min-h-[140px] shadow-xl"></textarea>
+                <button type="submit"
+                    class="w-full bg-black text-white p-6 font-black uppercase italic text-sm hover:bg-zinc-900 transition-all hover:scale-[1.02] shadow-2xl">
+                    Send Message
                 </button>
             </form>
 
-            <div id="success" class="hidden p-12 border-4 border-white glass animate-pulse text-center">
-                <span class="text-3xl font-black italic uppercase">Signal Received.</span>
-                <p class="mt-4 font-bold opacity-80 uppercase tracking-widest text-xs italic">Cody will contact you shortly.</p>
+            <div id="success" class="hidden p-12 border-4 border-white glass">
+                <span class="text-3xl font-black italic uppercase">Message Sent!</span>
+                <p class="mt-4 font-bold opacity-80 uppercase tracking-widest text-xs italic">Cody will be in touch with you shortly.</p>
             </div>
         </div>
     </section>
@@ -346,11 +485,12 @@
                 <span class="text-[10px] font-black uppercase tracking-[0.4em]">Pool & Spa Co</span>
             </div>
             <div class="text-[10px] font-black uppercase tracking-[0.5em] md:text-right">
-                © 2026 // TYCORP SYSTEMS ASSET <br>
-                <span class="text-[8px] opacity-50 italic text-center">Connecticut • Engineering • Maintenance</span>
+                © 2026 Cody's Pool & Spa Co<br>
+                <span class="text-[8px] opacity-50 italic">Gunite Specialization • Maintenance • Repairs</span>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>
